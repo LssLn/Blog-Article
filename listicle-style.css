@@ -1,0 +1,241 @@
+body{
+  margin: 0px;
+}
+
+#titolo{
+color : white;
+width: 780px;
+font-weight: normal;
+text-align: center;
+z-index:0;
+}
+
+.titolo-art,#titolo{
+font-size: 36px;
+}
+
+header {
+color: white;
+background-image: url(https://i.imgur.com/Q4Jq4jb.png);
+height: 500px;
+width:100%;
+background-size: cover;
+background-position: center;
+
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#overlay{
+background-color: rgba(0, 0, 0, .3);
+position: absolute;
+top:0;
+left:0;
+right:0;
+height:500px;
+}
+
+#flex-cont{
+display:flex;
+flex-direction:raw;
+justify-content: center;
+}
+
+#user{
+width: 98px;
+border: 2px solid white;
+border-radius: 100%;
+display:flex;
+justify-content: space-around;
+margin-top: -50px;
+z-index: 1;  
+}
+
+#testo {
+display : flex;
+flex-direction:column;
+text-align:center;
+
+}
+
+#flex-item-autore{
+color: rgb(51,51,51);
+line-height: 24px;
+font-weight: bold; 
+}
+
+#flex-item-agg{
+font-style: italic;
+//display:inline-block;
+ border-bottom: 2px solid #e6e6e6;
+ padding-bottom:10px;
+}
+
+.flex-cont-list{
+display:flex;
+flex-direction: row;
+margin-top:60px;
+}
+
+.flex-cont-article{
+margin-left:40px;
+}
+
+section{
+display:flex;
+flex-direction:row;
+justify-content:center;
+}
+
+article, .banner img, .giudizio{
+width: 66.7vw;
+line-height:32px;
+}
+
+.titolo-art{
+font-weight:bold;
+color: rgb(51,51,51);
+}
+
+#titolo, .titolo-art,{
+font-family: 'Roboto Slab', serif;  }
+
+article, .banner img, .giudizio, .voto,  #flex-item-autore,  #flex-item-agg, p{
+font-family: 'Source Sans Pro',sans-serif;
+font-size: 18px;
+}
+
+.banner img{
+margin-bottom:60px;
+}
+
+.voto{
+color: #42b4d6;
+margin-bottom:20px;
+}
+
+.listflex-cont-list{
+color: rgba(0, 0, 0, 0.25);
+font-size: 36px;
+}
+
+.giudizio{
+font-weight: bold;
+margin-bottom: 20px;
+margin-top:20px;
+}
+
+footer {
+  background-color: black;
+  padding: 60px;
+  text-align:center;
+}
+
+p{
+  color: rgba(255, 255, 255, 0.699);
+}
+
+@media(max-width: 780px){
+  body, #overlay{
+    width: 120vw;
+  }
+  header{
+    background-size: cover;
+    width:100%;
+    height:350px;
+  }
+  #overlay{
+    height:350px;
+  }
+
+  #titolo{
+    font-size: 2em;
+  }
+
+  article, .giudizio, .voto{
+    font-size:2em;
+  }
+  .titolo-art{
+    font-size:3em;
+  }
+  article, .banner img, .giudizio{
+  width: 100vw;
+  line-height:32px;
+  }
+  #flex-item-agg, #flex-item-autore{
+    font-size: 1.5em;
+  }
+
+}
+
+
+@media (max-width: 650px){
+  body,#overlay{
+  width:135vw;
+  }
+  header{
+    background-size: cover;
+    width:100%;
+    height:300px;
+  }
+  #overlay{
+    height:300px;
+  }
+  #titolo{
+    font-size: 3em;
+  }
+  article, .giudizio, .voto{
+    font-size:2.2em;
+    line-height:36px;
+  }
+  .titolo-art{
+    font-size:3em;
+  }
+  article, .banner img, .giudizio{
+  width: 100vw;
+  
+  }
+  #flex-item-agg, #flex-item-autore{
+    font-size: 1.7em;
+  }
+
+
+  }
+  
+  @media (max-width: 600px) {
+    body,#overlay{
+    width:150vw;
+   }
+  
+   header{
+    background-size: cover;
+    width:100%;
+    height:300px;
+    }
+    #overlay{
+    height:300px;
+    }
+    #titolo{
+      font-size: 3em;
+    }
+    article, .giudizio, .voto{
+    font-size:2.3em;
+    line-height:38px;
+    }
+    .titolo-art{
+    font-size:3.1em;
+    }
+    article, .banner img, .giudizio{
+    width: 100vw;
+    
+    }
+    #flex-item-agg, #flex-item-autore{
+    font-size: 1.8em;
+    }
+   
+  }
+  
+  
